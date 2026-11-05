@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/*ENCABEZADOS*/
+ h1{
+    background-color: aliceblue;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3em;
+    text-decoration: underline;
+    font-weight: 600;
+    padding-bottom: 32px;
+ }
+
+ /*LAYOUT*/
+.container{
+    box-sizing: border-box;
+    width: 80%;
+    /*para centrar cajas*/
+    margin: 0px auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.videos{
+    width: 500px;
+    height: 315px;
+    padding: 0px 10px;
+}
+
+.container p{
+    padding: 10px 0px 0px 30px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    font-size: 20px;
+    font-weight: 500;
+    text-align:left;
+}
+
+.container iframe{
+    border-radius: 25px;
+    overflow: hidden;
+    box-sizing: border-box;
+}

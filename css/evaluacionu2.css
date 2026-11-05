@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*ENCABEZADOS*/
+.cabecera{
+    padding: 60px 0px 20px 0px;
+    background-color: #76416a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.7em;
+    font-weight: 800;
+    color: white;
+}
+
+h2{
+    font-style: italic;
+    font-size: 40px;
+}
+
+/*LAYOUT*/
+body{
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+    background-color: whitesmoke;
+}
+
+/*SELECTORES ID*/
+#cuerpo article{
+    margin: 0px auto;
+    padding: 20px 40px 10px 40px;
+    background-color: #cac7c1;
+    width: 70%;
+}
+
+#cuerpo section{
+    padding: 20px 0px;
+}
+
+#menu, ul a{
+    background-color: #ac6789;
+    margin-bottom: 16px;
+    padding: 16px 0px;
+    color: white;
+}
+
+/*SELECTOR DE CLASE*/
+.lista{
+    padding: 16px 0px;
+    font-size: 20px;
+}
+
+.icono{
+    width: 100%;
+    min-height: 1px;
+    font-size: 90px;
+    text-align:center;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.items-col1 img, .items-col3 img{
+    width: 100%;
+    min-height: 1px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.video iframe{
+    width: 100%;
+    height: 250px;
+}
+
+.pie{
+    text-align: center;
+    padding: 30px 0px;
+    margin-top: 25px;
+    font-size: 1.2em;
+    background-color: #756271;
+    font-weight: 500;
+}
+
+
+
+.navegar li a:hover{
+   background-color: #773154;
+   padding: 16px 40px;
+   border-radius: 30px;
+}
+
+.navegar {
+    margin: 0px auto;
+    text-transform: uppercase;
+    width: 80%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+/*MEDIA QUERY*/
+/*BREAKPOINT 768*/
+@media only screen and (min-width:768px) {
+
+    #cuerpo li{
+        padding-bottom: 10px;
+    }
+
+    .items-col1, .items-col3{
+        width: 80%;
+        min-height: 1px;
+    }
+
+    .video{
+        width: 80%;
+    }
+
+    .pie p{
+        color: white;
+    }
+}
+
+/*BREAKPOINT 1380*/
+@media only screen and (min-width:1380px) {
+
+    .cabecera{
+        font-size: 2.1em;
+        text-transform: uppercase;
+    }
+
+    h2{
+        font-size: 40px; 
+    }
+
+    #cuerpo article {
+        width: 85%;
+    }
+
+    #cuerpo li{
+        padding-bottom: 10px;
+    }
+
+    .lista{
+        font-size: 25px;
+        padding: 0px 20px;
+    }
+
+    .container{
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: space-between;  
+    }
+
+    .items-col1 img{
+        width: 40%;
+        min-height: 1px;
+    }
+
+    .pie{
+        font-size: 1.5em;
+        color: white;
+    }
+
+    .navegar li a:hover{
+        padding: 16px 80px;
+        border-radius: 30px;
+    }
+
+    .navegar {
+        padding: 10px 0px;
+        font-size: 25px;
+    }
+
+    .video iframe{
+        width: 500px;
+        height: 400px;
+    }
+}
+
